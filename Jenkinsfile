@@ -5,8 +5,7 @@ agent any
 stages {
     stage('Execute Shell') {
                     steps {
-                        sh 'javac Hello.java'
-                     sh 'java Hello'
+                        sh 'java Hello.java'
                     }
                 }
 
