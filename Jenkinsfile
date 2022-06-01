@@ -12,7 +12,7 @@ stages {
 stage('Build') {
 
 steps {
-git 'https://github.com/tejashrimargam5/Ass5.git'
+"""git 'https://github.com/tejashrimargam5/Ass5.git'"""
  sh ('echo "Hello"')
 }
 
