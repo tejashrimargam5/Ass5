@@ -3,12 +3,7 @@ pipeline {
 agent any
 
 stages {
-    stage('Execute Shell') {
-                    steps {
-                        sh 'java Hello.java'
-                    }
-                }
-
+   
 stage('Build') {
 
 steps {
@@ -23,6 +18,12 @@ steps {
   sh ('echo "Hello"')
 }
 }
+ stage('Execute Shell') {
+                    steps {
+                        sh 'java Hello.java'
+                    }
+                }
+
  
 }
 }
