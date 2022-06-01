@@ -8,8 +8,7 @@ stage('Build') {
 
 steps {
 
-echo "HelloWorld"
-
+javac Hello.java
 }
 
 }
@@ -18,7 +17,7 @@ stage('Run') {
 
 steps {
 
-echo "HelloWorld"
+java Hello
 }
 }
 }
