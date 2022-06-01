@@ -3,8 +3,14 @@ pipeline {
 agent any
 
 stages {
+    stage('Execute Shell') {
+                    steps {
+                        sh 'javac Hello.java'
+                     sh 'java Hello'
+                    }
+                }
 
-stage('Build') {
+"""stage('Build') {
 
 steps {
 git 'https://github.com/tejashrimargam5/Ass5.git'
@@ -19,6 +25,7 @@ steps {
 git 'https://github.com/tejashrimargam5/Ass5.git'
 sh ("java Hello")
 }
-}
+}"""
+ 
 }
 }
