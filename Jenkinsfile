@@ -9,11 +9,11 @@ stages {
                     }
                 }
 
-"""stage('Build') {
+stage('Build') {
 
 steps {
 git 'https://github.com/tejashrimargam5/Ass5.git'
- sh ("javac Hello.java")
+ sh ('echo "Hello"')
 }
 
 }
@@ -21,10 +21,11 @@ git 'https://github.com/tejashrimargam5/Ass5.git'
 stage('Run') {
 
 steps {
-git 'https://github.com/tejashrimargam5/Ass5.git'
-sh ("java Hello")
+"""git 'https://github.com/tejashrimargam5/Ass5.git'
+"""
+  sh ('echo "Hello"')
 }
-}"""
+}
  
 }
 }
